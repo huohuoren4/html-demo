@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 引入lay.css -->
+	<link rel="stylesheet" href="../config/layui/css/layui.css">
+	<!-- 自定义 css -->
+	<style type="text/css">
+
+	</style>
+	<title>layui 模板</title>
+</head>
+
+<body>
+	<!-- html 文件正文 -->
+	<fieldset class="layui-elem-field layui-field-title " style="margin-top: 30px;">
+		<legend>🎂🤷‍♂️ 默认表单</legend>
+	</fieldset>
+	<form class="layui-form" action="">
+		<div class="layui-form-item">
+			<label class="layui-form-label">输入框</label>
+			<div class="layui-input-block">
+				<input type="text" name="title" required lay-verify="required" placeholder="请输入标题" autocomplete="off"
+					class="layui-input">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">密码框</label>
+			<div class="layui-input-inline">
+				<input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
+					autocomplete="off" class="layui-input">
+			</div>
+			<div class="layui-form-mid layui-word-aux">辅助文字</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">选择框</label>
+			<div class="layui-input-block">
+				<select name="city" lay-verify="required">
+					<option value=""></option>
+					<option value="0">北京</option>
+					<option value="1">上海</option>
+					<option value="2">广州</option>
+					<option value="3">深圳</option>
+					<option value="4">杭州</option>
+				</select>
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">复选框</label>
+			<div class="layui-input-block">
+				<input type="checkbox" name="like[write]" title="写作">
+				<input type="checkbox" name="like[read]" title="阅读" checked>
+				<input type="checkbox" name="like[dai]" title="发呆">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">开关</label>
+			<div class="layui-input-block">
+				<input type="checkbox" name="switch" lay-skin="switch">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">单选框</label>
+			<div class="layui-input-block">
+				<input type="radio" name="sex" value="男" title="男">
+				<input type="radio" name="sex" value="女" title="女" checked>
+			</div>
+		</div>
+		<div class="layui-form-item layui-form-text">
+			<label class="layui-form-label">文本域</label>
+			<div class="layui-input-block">
+				<textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<div class="layui-input-block">
+				<button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+				<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+			</div>
+		</div>
+	</form>
+	<br>
+	<fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+		<legend>🐱‍👓✨ 默认表格</legend>
+	</fieldset>
+	<div class="layui-form " style="margin-left: 60px;">
+		<table class="layui-table">
+			<colgroup>
+				<col width="150">
+				<col width="150">
+				<col width="200">
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th>人物</th>
+					<th>民族</th>
+					<th>出场时间</th>
+					<th>格言</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>张三</td>
+					<td>汉族</td>
+					<td>2016-10-14</td>
+					<td>人生似修行</td>
+				</tr>
+				<tr>
+					<td>张爱玲</td>
+					<td>汉族</td>
+					<td>1920-09-30</td>
+					<td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+				</tr>
+				<tr>
+					<td>Helen Keller</td>
+					<td>拉丁美裔</td>
+					<td>1880-06-27</td>
+					<td> Life is either a daring adventure or nothing.</td>
+				</tr>
+				<tr>
+					<td>岳飞</td>
+					<td>汉族</td>
+					<td>1103-北宋崇宁二年</td>
+					<td>三十功名尘与土，八千里路云和月</td>
+				</tr>
+				<tr>
+					<td>孟子</td>
+					<td>华夏族（汉族）</td>
+					<td>公元前-372年</td>
+					<td>穷则独善其身，达则兼济天下 </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<!-- 引入jquery.js -->
+	<script src="../config/jquery/jquery.min.js"></script>
+	<!-- 引入layui.js -->
+	<script src="../config/layui/layui.js"></script>
+	<!-- 引入echart.js -->
+	<script src="../config/echart/echarts.min.js"></script>
+	<!-- 自定义js -->
+	<script type="text/javascript">
+
+	</script>
+</body>
+
+</html>
